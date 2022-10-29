@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery Mobile Tips</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style type="text/css">
+.ui-header .ui-title {
+	margin: 0 10px;
+}
+.ui-footer {
+	font-size: 13px;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+ 
+<div data-role="page" id="top">
+	<div data-role="header">
+		<h1>DEMOページ トップ</h1>
+	</div>
+	<div role="main" class="ui-content">
+		<p>ここはトップページです</p>
+		<a href="#sub">サブページへ移動 &raquo;</a>
+	</div>
+	<div data-role="footer">
+		<p>
+			<script type="text/javascript">
+			var today = new Date();
+			var y = today.getFullYear();
+			document.write("&copy; " + y + " Web Tips アーカイブ");
+			</script> 
+		</p>
+	</div>
+</div>
+ 
+<div data-role="page" id="sub">
+	<div data-role="header">
+		<h1>DEMOページ サブ</h1>
+	</div>
+	<div role="main" class="ui-content">
+		<p>ここはサブページです</p>
+		<a href="#top">トップページへ移動 &raquo;</a>
+	</div>
+	<div data-role="footer">
+		<p>
+			<script type="text/javascript">
+			var today = new Date();
+			var y = today.getFullYear();
+			document.write("&copy; " + y + " Web Tips アーカイブ");
+			</script> 
+		</p>
+	</div>
+</div>
+ 
+</body>
+</html>
